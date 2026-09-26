@@ -1,0 +1,11 @@
+[package]
+name = "rust_core"
+version = "0.1.0"
+edition = "2021"
+description = "GenerateJwtKey 용 Rust 코어 라이브러리 (armcli init 생성)"
+
+[lib]
+name = "rust_core"
+crate-type = ["staticlib"]
+
+[dependencies]

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "C/9aX2OmYfo=",
+  "success": true,
+  "projectFilePath": "/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/DotnetLibs.csproj",
+  "expectedPackageFiles": [
+    "/Users/yeoji/.nuget/packages/microsoft.dotnet.ilcompiler/10.0.12/microsoft.dotnet.ilcompiler.10.0.12.nupkg.sha512",
+    "/Users/yeoji/.nuget/packages/microsoft.net.illink.tasks/10.0.12/microsoft.net.illink.tasks.10.0.12.nupkg.sha512",
+    "/Users/yeoji/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/10.0.12/runtime.osx-arm64.microsoft.dotnet.ilcompiler.10.0.12.nupkg.sha512",
+    "/Users/yeoji/.nuget/packages/microsoft.netcore.app.runtime.osx-arm64/10.0.12/microsoft.netcore.app.runtime.osx-arm64.10.0.12.nupkg.sha512",
+    "/Users/yeoji/.nuget/packages/microsoft.aspnetcore.app.runtime.osx-arm64/10.0.12/microsoft.aspnetcore.app.runtime.osx-arm64.10.0.12.nupkg.sha512",
+    "/Users/yeoji/.nuget/packages/microsoft.netcore.app.runtime.nativeaot.osx-arm64/10.0.12/microsoft.netcore.app.runtime.nativeaot.osx-arm64.10.0.12.nupkg.sha512",
+    "/Users/yeoji/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/10.0.12/runtime.osx-arm64.microsoft.dotnet.ilcompiler.10.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

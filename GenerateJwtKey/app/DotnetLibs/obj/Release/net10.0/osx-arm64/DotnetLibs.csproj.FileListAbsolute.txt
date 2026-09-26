@@ -1,0 +1,12 @@
+/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/bin/Release/net10.0/osx-arm64/DotnetLibs.deps.json
+/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/bin/Release/net10.0/osx-arm64/DotnetLibs.dll
+/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/bin/Release/net10.0/osx-arm64/DotnetLibs.pdb
+/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/obj/Release/net10.0/osx-arm64/DotnetLibs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/obj/Release/net10.0/osx-arm64/DotnetLibs.AssemblyInfoInputs.cache
+/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/obj/Release/net10.0/osx-arm64/DotnetLibs.AssemblyInfo.cs
+/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/obj/Release/net10.0/osx-arm64/DotnetLibs.csproj.CoreCompileInputs.cache
+/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/obj/Release/net10.0/osx-arm64/DotnetLibs.sourcelink.json
+/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/obj/Release/net10.0/osx-arm64/DotnetLibs.dll
+/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/obj/Release/net10.0/osx-arm64/refint/DotnetLibs.dll
+/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/obj/Release/net10.0/osx-arm64/DotnetLibs.pdb
+/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/obj/Release/net10.0/osx-arm64/ref/DotnetLibs.dll
