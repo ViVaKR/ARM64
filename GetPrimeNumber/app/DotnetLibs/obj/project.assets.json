@@ -108,11 +108,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/DotnetLibs.csproj",
+      "projectUniqueName": "/Users/yeoji/GitWorkspace/ARM64/GetPrimeNumber/app/DotnetLibs/DotnetLibs.csproj",
       "projectName": "DotnetLibs",
-      "projectPath": "/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/DotnetLibs.csproj",
+      "projectPath": "/Users/yeoji/GitWorkspace/ARM64/GetPrimeNumber/app/DotnetLibs/DotnetLibs.csproj",
       "packagesPath": "/Users/yeoji/.nuget/packages/",
-      "outputPath": "/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/obj/",
+      "outputPath": "/Users/yeoji/GitWorkspace/ARM64/GetPrimeNumber/app/DotnetLibs/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/yeoji/.nuget/NuGet/NuGet.Config"
