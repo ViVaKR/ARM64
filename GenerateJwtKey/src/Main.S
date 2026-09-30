@@ -16,15 +16,13 @@
 DATA_SECTION
 arr: .quad 23, 45, 67, 89, 65536, ~0, 0xFFFFFFFFFFFFFFFF
 .equ ARR_COUNT, (. - arr) >> 3
-
+safe_chars: .ascii "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+.equ SAFE_CHARS_LEN, . - safe_chars // 검증용, 아래 AND 마스크와 반드시 일치해야 함
+.equ KEY_LEN, 129  // length 파라미터, 권장값 129
 // 상수, 문자열 등 읽기 전용 데이터, Read-Only
 // .rodata
 // .ascii, .asciz, .byte, .word, .quad
 CSTRING_SECTION
-safe_chars: .ascii "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
-.equ SAFE_CHARS_LEN, . - safe_chars // 검증용, 아래 AND 마스크와 반드시 일치해야 함
-.equ KEY_LEN, 129  // length 파라미터, 권장값 129
-// .byte 0
 
 fmt_key_len: .asciz "\n🔑 생성된 Secret Key 길이: %lld자 (안전 검증: OK)\n"
 

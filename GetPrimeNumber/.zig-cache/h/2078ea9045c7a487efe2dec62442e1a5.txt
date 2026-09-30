@@ -1,2 +1,0 @@
-0
-377 14571211 1790438553049910493 9466c97760574c0ff8f9032d396f8f17 0 /Users/yeoji/GitWorkspace/ARM64/GetPrimeNumber/src/Main.S

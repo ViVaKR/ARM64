@@ -2,7 +2,7 @@ const std = @import("std");
 
 // GenerateJwtKey — Zig 오케스트레이터
 // 어셈블리(src/Main.S)를 뼈대로 삼고, 필요한 언어별 라이브러리를 빌드해 링크한다.
-// (armcli init 으로 생성됨 — zig 0.16 기준, 다른 버전에서는 API가 다를 수 있으니 확인해줘)
+// (armcli init 으로 생성됨 — zig 0.16 기준, 다른 버전에서는 API가 다를 수 있으니 확인요망)
 
 pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
