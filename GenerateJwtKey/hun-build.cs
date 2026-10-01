@@ -196,7 +196,11 @@ Console.WriteLine("\n⚡ 즉시 실행 타격 감행!\n-------------------------
 var psiRun = new ProcessStartInfo(Path.Combine(".", outputFile)) { UseShellExecute = false };
 using var procRun = Process.Start(psiRun);
 procRun?.WaitForExit();
+// 바이너리가 남긴 유산(Exit Code)을 확보!
+int exitCode = procRun?.ExitCode ?? 0;
 Console.WriteLine("------------------------------------------------\n🏁 작전 종료 완료!");
+
+Environment.ExitCode = exitCode;
 
 public static class FolderFilterExtensions
 {

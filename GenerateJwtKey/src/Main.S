@@ -96,7 +96,7 @@ fetch_char:
 	bl   _printf
 	add  sp, sp, #16
 
-	mov x0, #0
+	mov x0, #123
 
 FUNC_EXIT_FULL 160
 

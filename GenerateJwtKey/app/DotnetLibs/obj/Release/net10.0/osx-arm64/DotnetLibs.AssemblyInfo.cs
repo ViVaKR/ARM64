@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DotnetLibs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d94f6401853d2b09ee288f4fa23c973ddbe78300")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae9b968ade8cb1af0c8ab458d6614698117ad61f")]
 [assembly: System.Reflection.AssemblyProductAttribute("DotnetLibs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DotnetLibs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

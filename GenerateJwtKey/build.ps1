@@ -1,4 +1,5 @@
 #!/usr/bin/env pwsh
+
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 
@@ -19,7 +20,7 @@ if (-not $asmFiles) {
 }
 
 # 2. 메인 진입점 파일 감지
-$targetBaseName = "hun-bin"
+$targetBaseName = "ps-bin"
 foreach ($file in $asmFiles) {
   if (Select-String -Path $file.FullName -Pattern "^\s*_?main\s*:" -Quiet) {
     $targetBaseName = $file.BaseName.ToLower()
@@ -61,8 +62,6 @@ if (Test-Path $dotnetProj) {
   Copy-Item $srcDylib $targetDylib -Force
   install_name_tool -id @rpath/DotnetLibs.dylib $targetDylib
   $extraLibs += "$targetDylib"
-  # 변경 (배열로 쪼개기):
-  # $rpathFlag = "-rpath @executable_path"
   $rpathFlag = @("-rpath", "@executable_path")
 }
 
@@ -82,5 +81,7 @@ ld -arch arm64 -syslibroot $sdkPath -lSystem -o $outputFile $objFiles $extraLibs
 
 # 정리 및 즉시 실행 타격
 $objFiles | Remove-Item -Force
-Write-Host "✨ 사격 성공! 타격 감행 -> $outputFile" -ForegroundColor Cyan
+# Write-Host "✨ 사격 성공! 타격 감행 -> $outputFile" -ForegroundColor Cyan
 & "./$outputFile"
+# 바이너리가 뱉은 종료 코드를 스크립트의 최종 Exit Code로 장착!
+exit $LASTEXITCODE
