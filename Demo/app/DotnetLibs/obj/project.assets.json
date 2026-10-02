@@ -14,6 +14,26 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       }
+    },
+    "net10.0/osx-arm64": {
+      "Microsoft.DotNet.ILCompiler/10.0.12": {
+        "type": "package",
+        "dependencies": {
+          "runtime.osx-arm64.Microsoft.DotNet.ILCompiler": "10.0.12"
+        },
+        "build": {
+          "build/Microsoft.DotNet.ILCompiler.props": {}
+        }
+      },
+      "Microsoft.NET.ILLink.Tasks/10.0.12": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "runtime.osx-arm64.Microsoft.DotNet.ILCompiler/10.0.12": {
+        "type": "package"
+      }
     }
   },
   "libraries": {
@@ -94,6 +114,27 @@
         "tools/netframework/build/Microsoft.NET.ILLink.targets",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "runtime.osx-arm64.Microsoft.DotNet.ILCompiler/10.0.12": {
+      "sha512": "WwM79vRmPYfsV7wVjFVYaZWc853weM+HpY917SbWI52go/PU+A2L24fMaGkYB3bunhjiLb/SMNlNT0fuyjbQqA==",
+      "type": "package",
+      "path": "runtime.osx-arm64.microsoft.dotnet.ilcompiler/10.0.12",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.osx-arm64.microsoft.dotnet.ilcompiler.10.0.12.nupkg.sha512",
+        "runtime.osx-arm64.microsoft.dotnet.ilcompiler.nuspec",
+        "tools/ilc",
+        "tools/libclrjit_universal_arm64_arm64.dylib",
+        "tools/libclrjit_universal_arm_arm64.dylib",
+        "tools/libclrjit_unix_x64_arm64.dylib",
+        "tools/libclrjit_win_x64_arm64.dylib",
+        "tools/libclrjit_win_x86_arm64.dylib",
+        "tools/libjitinterface_arm64.dylib"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -108,11 +149,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/DotnetLibs.csproj",
+      "projectUniqueName": "/Users/yeoji/GitWorkspace/ARM64/Demo/app/DotnetLibs/DotnetLibs.csproj",
       "projectName": "DotnetLibs",
-      "projectPath": "/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/DotnetLibs.csproj",
+      "projectPath": "/Users/yeoji/GitWorkspace/ARM64/Demo/app/DotnetLibs/DotnetLibs.csproj",
       "packagesPath": "/Users/yeoji/.nuget/packages/",
-      "outputPath": "/Users/yeoji/GitWorkspace/ARM64/GenerateJwtKey/app/DotnetLibs/obj/",
+      "outputPath": "/Users/yeoji/GitWorkspace/ARM64/Demo/app/DotnetLibs/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/yeoji/.nuget/NuGet/NuGet.Config"
@@ -172,6 +213,18 @@
         "assetTargetFallback": true,
         "warn": true,
         "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.osx-arm64",
+            "version": "[10.0.12, 10.0.12]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.NativeAOT.osx-arm64",
+            "version": "[10.0.12, 10.0.12]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.osx-arm64",
+            "version": "[10.0.12, 10.0.12]"
+          },
           {
             "name": "runtime.osx-arm64.Microsoft.DotNet.ILCompiler",
             "version": "[10.0.12, 10.0.12]"
@@ -457,6 +510,11 @@
           "System.Xml.XPath": "(,4.3.32767]",
           "System.Xml.XPath.XDocument": "(,5.0.32767]"
         }
+      }
+    },
+    "runtimes": {
+      "osx-arm64": {
+        "#import": []
       }
     }
   }

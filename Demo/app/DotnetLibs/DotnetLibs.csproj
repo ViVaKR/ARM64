@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <!-- Native AOT: 어셈블리/다른 언어에서 직접 호출 가능한 네이티브 라이브러리로 게시 -->
+    <PublishAot>true</PublishAot>
+    <!-- 🆕 이게 핵심! 이게 없으면 UnmanagedCallersOnly 메서드가 dylib으로 export 안 됨 -->
+    <NativeLib>Shared</NativeLib>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+</Project>
