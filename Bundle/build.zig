@@ -1,6 +1,6 @@
 const std = @import("std");
 
-// Demo — Zig 오케스트레이터
+// Bundle — Zig 오케스트레이터
 // 어셈블리(src/Main.S)를 뼈대로 삼고, 필요한 언어별 라이브러리를 빌드해 링크한다.
 // (armcli init 으로 생성됨 — zig 0.16 기준, 다른 버전에서는 API가 다를 수 있으니 확인해줘)
 
@@ -9,7 +9,7 @@ pub fn build(b: *std.Build) void {
     const optimize = b.standardOptimizeOption(.{});
 
     const exe = b.addExecutable(.{
-        .name = "Demo",
+        .name = "Bundle",
         .root_module = b.createModule(.{
             .target = target,
             .optimize = optimize,
@@ -86,6 +86,6 @@ pub fn build(b: *std.Build) void {
         run_cmd.addArgs(args);
     }
 
-    const run_step = b.step("run", "Demo 실행");
+    const run_step = b.step("run", "Bundle 실행");
     run_step.dependOn(&run_cmd.step);
 }

@@ -1,4 +1,4 @@
-# Demo
+# Bundle
 
 `armcli init` 으로 생성된 프로젝트. Zig(`build.zig`)가 오케스트레이터 역할을 하며,
 어셈블리 진입점(`src/Main.S`)에서 각 언어 라이브러리의 함수를 `bl` 로 호출하는 구조.
@@ -12,7 +12,7 @@
 ## 디렉토리
 
 ```
-Demo/
+Bundle/
 ├── build.zig          # 오케스트레이터 — 언어별 라이브러리 빌드 후 exe 링크
 ├── app/
 │   ├── RustLibs/rust_core/
